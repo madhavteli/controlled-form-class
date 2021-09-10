@@ -18,7 +18,12 @@ class ControlledForm extends Component {
 	formSaveHandler = (event) => {
 		event.preventDefault();
 		const { enteredFirstName, enteredLastName, enteredEmail, enteredPhone } = this.state;
-		alert('firstName: '+enteredFirstName+'\nlastName: '+enteredLastName+'\nemail: '+enteredEmail+'\nphone: '+enteredPhone);
+		alert(`
+          firstName: ${enteredFirstName}
+          lastName: ${enteredLastName}
+          email: ${enteredEmail}
+          phone: ${enteredPhone}
+    `);
 	};
 	render() {
 		const { enteredFirstName, enteredLastName, enteredEmail, enteredPhone } = this.state;
